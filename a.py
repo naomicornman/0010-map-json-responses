@@ -15,9 +15,9 @@ for x in ffile:
     line_num += 1
 ffile.close()
 
-print(ffile, "has", line_num, "lines")
+print(fname, "has", line_num, "lines")
 	
-print(ffile, "has", (len(resp.text)), "characters")
+print(fname, "has", (len(resp.text)), "characters")
 
 ffile.close()
 
@@ -37,8 +37,12 @@ for x in mapfile:
     line_num += 1
 mapfile.close()
 
-print(mapfile, "has", line_num, "lines")
-	
-print(mapfile, "has", (len(resp.text)), "characters")
+print("Writing to:" + mapname)
 
-mapfile.close()
+print ("Wrote " + str(line_num) + "lines and " + str((len(resp.text))) + " characters")
+
+# print(mapname, "has", line_num, "lines")
+	
+# print(mapname, "has", (len(resp.text)), "characters")
+
+# mapfile.close()
