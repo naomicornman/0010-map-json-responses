@@ -4,9 +4,11 @@ fname = os.path.join('tempdata', 'googlemaps', 'stanford.json')
 
 ffile = open(fname, 'r')
 txt = ffile.read()
-
+ffile.close()
 
 mydict = json.loads(txt)
-# type(mydata)
-print(dict['status'])
+
+# type(mydict)
+
+print(mydict['status'])
 ffile.close()
