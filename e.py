@@ -8,10 +8,8 @@ ffile.close()
 
 address = json.loads(txt)
 
-for x in address['results'][3]:
-	print(x['formatted_address'])
-
 for x in address['results']:
-	print(x['geometry'])
+	print((x['formatted_address']),(';'),(x['geometry']['location']['lat']),(';'),(x['geometry']['location']['lng']))
+
 
 ffile.close()
